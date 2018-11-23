@@ -1,0 +1,21 @@
+@import "../../style/variables.scss";
+
+#resumeIFrame {
+  width: 650pt;
+  height: 1800pt;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 5px 1px rgba(107, 101, 101, 0.35);
+  border: none;
+}
+#docsHolder {
+  margin: auto;
+  background: $ContentBackground;
+  padding: 70pt;
+}
+
+#resumeLinkHolder {
+  margin: auto;
+  margin-bottom: 70pt;
+  text-align: center;
+}

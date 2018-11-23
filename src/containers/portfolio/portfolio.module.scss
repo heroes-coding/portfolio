@@ -1,0 +1,64 @@
+@import "../../style/variables.scss";
+
+#portfolioHolder {
+  margin: auto;
+  background: $ContentBackground;
+  padding: 70pt;
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolioItem {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 5px 1px rgba(107, 101, 101, 0.35);
+ 
+}
+
+.cardHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  width: 250pt;
+  padding: 5pt 20pt;
+  border: 1pt solid #ccc;
+}
+
+#portfolioTitle {
+  margin: 70pt 20% 0pt 20%;
+  text-align: center;
+}
+
+.portfolioItem {
+  font-size: 0.8em;
+}
+
+.pItemTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: $TitleFont;
+}
+
+.pItemImageHolder {
+  border: 2px solid $Dark;
+  margin: auto;
+}
+
+.pItemImageHolder > img {
+  margin: auto;
+}
+
+.pItemDescription {
+  font-size: 0.8em;
+}
+
+.pItemLink, .pItemLink:hover, .pItemGithub, .pItemGithub:hover {
+  font-size: 0.8em;
+  font-weight: bold;
+}

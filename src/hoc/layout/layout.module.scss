@@ -1,0 +1,13 @@
+@import "../../style/variables.scss";
+
+#body {
+  width: 100%;
+  background: $ContentBackground;
+  height: 500pt;
+}
+
+#divider {
+  background: $Dark;
+  border-top: 3pt dashed $MonoGreen;
+  border-bottom:1pt solid lighten($Dark,10%);
+}

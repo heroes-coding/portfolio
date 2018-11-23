@@ -1,0 +1,90 @@
+@import "../../style/variables.scss";
+
+#skyHolder {
+  background: rgba(0,0,0,0.5);
+}
+
+
+#header {
+  font-size: 35pt;
+  margin-top: 50pt;
+  color: $DimText;
+  text-align: center;
+  font-family: $TitleFont;
+}
+
+#subHeader {
+  font-size: 15pt;
+  text-align: center;
+  color: $DimText;
+}
+
+#consoleHolder {
+  border: 2px solid $Dark;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  background: darken($Dark,10%);
+  padding: 20pt;
+  margin-top: 50pt;
+  min-height: 200pt;
+}
+
+
+#console {
+
+  display: flex;
+  margin-top: 10pt;
+  padding-left: 30pt;
+  margin-bottom: 30pt;
+  /*
+  background: black;
+  border-radius: 5pt;
+  border: 3px solid #222;
+  */
+}
+
+.consoleText {
+  width: 100%;
+  color:$MonoGreen;
+  text-align: left;
+  font-family: $RetroFont;
+  font-size: 1.2em;
+  line-height: 1.3;
+}
+
+.navButton {
+  color: $MonoGreen;
+  display: flex;
+  font-family: $RetroFont;
+  justify-content: space-between;
+  font-size: 1.2em;
+  margin-bottom: 20pt;
+  width: 100%;
+  padding: 15pt 30pt 15pt 30pt;
+  border: 2px dashed $MonoGreen;
+  cursor: pointer;
+}
+
+.navButton:hover, .active {
+  text-decoration: none;
+  color: darken($Dark,10%);
+  background-color: $MonoGreen;
+  border: 2px dashed darken($Dark,10%);
+}
+
+
+
+#consoleNav {
+  margin-top: 10pt;
+}
+
+
+.App {
+  background-size: 100%;
+  color: white;
+  height: 100vh;
+  min-width: 1400px;
+  min-height: 600px;
+}
+
+
