@@ -74,12 +74,12 @@ class Nav extends Component {
                 link="/story"
               />
               <this.NavButton
-                text="Portfolio"
+                text="Portfolio / Github"
                 icon="fas fa-folder"
                 link="/portfolio"
               />
               <this.NavButton
-                text="Resume / Github"
+                text="Resume"
                 icon="fas fa-file"
                 link="/resume"
               />

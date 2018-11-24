@@ -3,16 +3,27 @@
 #portfolioHolder {
   margin: auto;
   background: $ContentBackground;
-  padding: 70pt;
+  padding: 70pt 70pt 70pt 45pt;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
+
+
+
 
 .portfolioItem {
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 5px 1px rgba(107, 101, 101, 0.35);
- 
+  margin: 0pt 10pt 70pt 10pt;
+  border: 2pt solid transparent;
+}
+
+.portfolioItem:hover {
+  border: 2pt dashed $MonoGreen;
 }
 
 .cardHolder {
@@ -27,7 +38,6 @@
   justify-content: space-between;
   width: 250pt;
   padding: 5pt 20pt;
-  border: 1pt solid #ccc;
 }
 
 #portfolioTitle {

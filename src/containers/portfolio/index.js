@@ -38,6 +38,29 @@ class Portfolio extends Component {
             link="https://heroes.report"
             linkText="Heroes.report live site"
           />
+          <PortfolioItem
+            image="/images/cl.jpg"
+            title="Craigs List Job Aggregator"
+            description="A private job aggregator for all tech jobs on Craigslist across America.  Front-end done in React & Electron.  Back end done with an Express API and a Rust scraper / data extractor"
+            githubLink="https://github.com/heroes-coding/jobsviewer"
+            githubText="Github link"
+          />
+          <PortfolioItem
+            image="/images/student-equity.jpg"
+            title="Simple Survey System"
+            description="A survey creation, provision, and summary data viewer"
+            githubLink="https://github.com/heroes-coding/Survey-System"
+            githubText="Github link"
+            link="https://studentequity.herokuapp.com/"
+            linkText="Survey live link"
+          />
+          <PortfolioItem
+            image="/images/student-equity.jpg"
+            title="SmartShare"
+            description="A multi-threaded file management server written in Java / JAXB / PostgreSQL exposed to users on the command line (using PicoCLI)"
+            githubLink="https://github.com/heroes-coding/Survey-System"
+            githubText="Github link"
+          />          
         </div>
       </div>
     )
