@@ -10,7 +10,8 @@ class Timeline extends React.Component {
     }
   }
   render () {
-    const { startDate, endDate, events, xRatio, yRatio } = this.props
+    const { startDate, endDate, xRatio, yRatio } = this.props
+    const events = this.props.events.filter(e => e.date >= startDate)
     const xOffset = xRatio / 2 + 5
     const yPadding = yRatio * 0.01
 
@@ -50,12 +51,9 @@ class Timeline extends React.Component {
         )}
         {events.map(({ date, name, icon }, i) =>
           <g key={name}>
-            <text x={xOffset} y={yScale(date)} className={styles.eventText}>
+            <text x={xRatio - 10} y={yScale(date)} className={styles.eventText}>
               {name}
-
-              <svg><use xlinkHref='./icons/calculator-solid.svg' /></svg>
-              {icon && <tspan className={styles.bigIcon}>&#xf0c0;</tspan>}
-              <foreignObject height={50} width={50}><div xmlns='http://www.w3.org/1999/xhtml'>HI!</div></foreignObject>
+              {icon && icon()}
             </text>
           </g>
         )}

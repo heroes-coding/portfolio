@@ -1,8 +1,7 @@
 @import "../../style/variables.scss";
 
 #timelineSVG{
-  height: 2000;
-  width: 200;
+  overflow: visible;
 }
 
 .tickText {
@@ -12,8 +11,9 @@
 }
 
 .eventText {
-  text-anchor: middle;
-  font-size: 0.8em;
+  text-anchor: end;
+  font-size: 1.2em;
+  font-family: $RetroFont;
 }
 
 .eventTextLeft {
@@ -26,12 +26,18 @@
 }
 
 
-.timelineSVG::before {
-  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
-}
-
-.bigIcon, .smallIcon {
+.bigIcon, .brandIcon {
   font-family: "Font Awesome 5 Free";
+  fill: $MonoGreen;
+  stroke: $Dark;
+  stroke-width: 1pt;
+  font-size: 1em;
+  font-weight: bold;
+  overflow: visible;
+}
+.brandIcon {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: normal;
 }
 
 

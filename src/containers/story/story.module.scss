@@ -11,9 +11,22 @@
   align-content: center;
 }
 
+#headshotHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50pt;
+}
+
+#headshot {
+  height: 200pt;
+  border-radius: 100pt;
+  border: 2pt dashed $MonoGreen;
+}
+
 .title {
     font-size: 25pt;
-    margin-bottom: 70pt;
+    margin-bottom: 50pt;
     color: lighten($Dark,5%);
     text-align: center;
     font-family: $TitleFont;
