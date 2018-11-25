@@ -32,9 +32,9 @@ class Portfolio extends Component {
           <PortfolioItem
             image="/images/heroes-report.png"
             title="Heroes.report"
-            description="The front-end for all kinds of Heroes of the Storm statistics.  Written with React, Redux, D3.js, and Web Assembly (Rust and C++)"
+          description="The front-end for all kinds of Heroes of the Storm statistics.  Written with React, Redux, D3.js, and Web Assembly (Rust and C++)"
             githubLink="https://github.com/heroes-coding/Heroes-Report"
-            githubText="Heroes.report front end Github repo"
+            githubText="Front end Github link"
             link="https://heroes.report"
             linkText="Heroes.report live site"
           />
@@ -48,17 +48,31 @@ class Portfolio extends Component {
           <PortfolioItem
             image="/images/student-equity.jpg"
             title="Simple Survey System"
-            description="A survey creation, provision, and summary data viewer"
+            description="A survey creation, provision, and summary data viewer written with React, D3.js, and Google Firebase"
             githubLink="https://github.com/heroes-coding/Survey-System"
             githubText="Github link"
             link="https://studentequity.herokuapp.com/"
             linkText="Survey live link"
           />
           <PortfolioItem
-            image="/images/student-equity.jpg"
+            image="/images/java-pico.jpg"
             title="SmartShare"
             description="A multi-threaded file management server written in Java / JAXB / PostgreSQL exposed to users on the command line (using PicoCLI)"
-            githubLink="https://github.com/heroes-coding/Survey-System"
+            githubLink="https://github.com/cooksystemsinc/java-assessment-smart-share-heroes-coding"
+            githubText="Github link"
+          />
+          <PortfolioItem
+            image="/images/java-boot.jpg"
+            title="Social Media"
+            description="A Twitter-like rest API with (re)tweets, feeds, followers, hashtags, and mentions utilizing Spring, Spring Boot, and Hibernate"
+            githubLink="https://github.com/cooksystemsinc/java-assessment-smart-share-heroes-coding"
+            githubText="Github link"
+          />
+          <PortfolioItem
+            image="/images/dev-duel.png"
+            title="Dev Duel"
+            description="A simple vanilla javascript / html / css retro-styled web application with an Express API for comparing Github developer portfolios"
+            githubLink="https://github.com/cooksystemsinc/js-assessment-dev-duel-heroes-coding"
             githubText="Github link"
           />          
         </div>
