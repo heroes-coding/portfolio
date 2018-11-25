@@ -5,6 +5,12 @@
 }
 
 
+#divider {
+  background: $Dark;
+  border-top: 3pt dashed $MonoGreen;
+  border-bottom:1pt solid lighten($Dark,10%);
+}
+
 #header {
   font-size: 35pt;
   margin-top: 50pt;

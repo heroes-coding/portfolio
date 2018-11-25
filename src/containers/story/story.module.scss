@@ -1,0 +1,24 @@
+@import "../../style/variables.scss";
+
+#storyHolder {
+  margin: auto;
+  background: $ContentBackground;
+  padding: 70pt 70pt 70pt 45pt;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.title {
+    font-size: 25pt;
+    margin-bottom: 70pt;
+    color: lighten($Dark,5%);
+    text-align: center;
+    font-family: $TitleFont;
+}
+
+.storyText > p {
+  margin: 0 0pt 30pt 0pt;
+}

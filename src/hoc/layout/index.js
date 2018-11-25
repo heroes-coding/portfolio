@@ -4,8 +4,7 @@ import styles from './layout.module.scss'
 
 const Layout = props =>
   <div id='content' className='container-fluid'>
-    <Nav />
-    <div id={styles.divider} className="row justify-content-center"></div>
+    {/* <Nav /> */}
     <div className='row justify-content-center'>
       <div id={styles.body}>
         {props.children}
