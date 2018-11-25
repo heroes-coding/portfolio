@@ -10,7 +10,7 @@ class Timeline extends React.Component {
     }
   }
   render () {
-    const { startDate, endDate, minorEvents, majorEvents, xRatio, yRatio } = this.props
+    const { startDate, endDate, events, xRatio, yRatio } = this.props
     const xOffset = xRatio / 2 + 5
     const yPadding = yRatio * 0.01
 
@@ -22,7 +22,7 @@ class Timeline extends React.Component {
     const startYearRounded = new Date(startYear + oneYear / 12).getFullYear()
     const yearCount = Math.floor((endDate - startYear) / oneYear)
     const yearTicks = []
-    for (let y = 0; y < yearCount; y++) {
+    for (let y = 0; y <= yearCount; y++) {
       yearTicks.push({
         time: startYear + y * oneYear,
         loc: yScale(startYear + y * oneYear),
@@ -46,6 +46,17 @@ class Timeline extends React.Component {
             <line x1={xOffset - 5} y1={loc} x2={xOffset} y2={loc} className={styles.tick} />
             <text x={5} y={loc + 15} className={styles.tickText}>{label}</text>
             <line x1={0} y1={loc} x2={xRatio} y2={loc} className={styles.tickLine} />
+          </g>
+        )}
+        {events.map(({ date, name, icon }, i) =>
+          <g key={name}>
+            <text x={xOffset} y={yScale(date)} className={styles.eventText}>
+              {name}
+
+              <svg><use xlinkHref='./icons/calculator-solid.svg' /></svg>
+              {icon && <tspan className={styles.bigIcon}>&#xf0c0;</tspan>}
+              <foreignObject height={50} width={50}><div xmlns='http://www.w3.org/1999/xhtml'>HI!</div></foreignObject>
+            </text>
           </g>
         )}
       </svg>

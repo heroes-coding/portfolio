@@ -11,6 +11,31 @@
 
 }
 
+.eventText {
+  text-anchor: middle;
+  font-size: 0.8em;
+}
+
+.eventTextLeft {
+  text-anchor: start;
+  font-size: 0.8em;
+}
+.eventTextRight {
+  text-anchor: end;
+  font-size: 0.8em;
+}
+
+
+.timelineSVG::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+}
+
+.bigIcon, .smallIcon {
+  font-family: "Font Awesome 5 Free";
+}
+
+
+
 .tickLine {
   stroke: #ccc;
 
