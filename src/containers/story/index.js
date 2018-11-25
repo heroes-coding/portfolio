@@ -10,7 +10,7 @@ class Story extends Component {
   componentDidMount() {
     getStoryIntro().then(storyIntro => {
       console.log(storyIntro)
-      storyIntro = storyIntro.split("\n").map(p => <p>{p}</p>)
+      storyIntro = storyIntro.split("\n").map((p,i) => <p key={i}>{p}</p>)
       this.setState({ storyIntro })
     })
   }
@@ -19,8 +19,20 @@ class Story extends Component {
       <div id={styles.storyHolder}>
         <div className={styles.title}>About me / My Story </div>
         <div className={styles.storyText}>{this.state.storyIntro}</div>
-        <div className={styles.timeLineHolder}>
-          <Timeline>
+        <div className={styles.timelineHolder}>
+          <Timeline
+            startDate = {Date.parse('28 Nov 1980')}
+            endDate = {new Date()}
+            xRatio = {500}
+            yRatio = {3000}
+            xOffset = {0}
+            minorEvents={[
+
+            ]}
+            turningPoints={[
+
+            ]}
+          >
           </Timeline>
         </div>
       </div>

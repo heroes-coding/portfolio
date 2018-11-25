@@ -22,3 +22,11 @@
 .storyText > p {
   margin: 0 0pt 30pt 0pt;
 }
+
+.timelineHolder {
+  width: 100%;
+  margin: auto;
+  padding: 30pt 0;
+  display: flex;
+  justify-content: space-around
+}

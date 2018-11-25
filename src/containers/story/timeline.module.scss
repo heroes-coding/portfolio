@@ -1,1 +1,18 @@
 @import "../../style/variables.scss";
+
+#timelineSVG{
+  height: 2000;
+  width: 200;
+}
+
+.tickText {
+  font-size: 0.7em;
+  fill: #666;
+
+}
+
+.tickLine {
+  stroke: #ccc;
+
+
+}
