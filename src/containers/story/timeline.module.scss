@@ -6,12 +6,18 @@
 
 svg {
   overflow: visible !important;
+  min-width: 700pt;
 }
 
 .tickText {
   font-size: 0.7em;
   fill: #666;
 
+}
+
+.slider { 
+  width: 1000; 
+  margin: 50 
 }
 
 .eventText {
