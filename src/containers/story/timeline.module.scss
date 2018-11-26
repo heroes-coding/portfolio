@@ -4,6 +4,10 @@
   overflow: visible;
 }
 
+svg {
+  overflow: visible !important;
+}
+
 .tickText {
   font-size: 0.7em;
   fill: #666;

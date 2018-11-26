@@ -24,6 +24,17 @@
   border: 2pt dashed $MonoGreen;
 }
 
+.sliderTitle {
+  width: 100%;
+  margin: auto;
+  font-family: $TitleFont;
+  font-size: 1.5em;
+  color: $MonoGreen;
+  text-align: center;
+  margin-top: 50pt;
+  margin-bottom: -25pt;
+}
+
 .title {
     font-size: 25pt;
     margin-bottom: 50pt;

@@ -3,11 +3,12 @@ import styles from './story.module.scss'
 import { getStoryIntro } from '../../helpers'
 import Timeline from './timeline'
 import * as icons from './icons'
-
+import TimelineSlider from './timeslider'
 
 class Story extends Component {
   state = {
-    storyIntro: ''
+    storyIntro: '',
+    startYear: 1994
   }
   componentDidMount() {
     getStoryIntro().then(storyIntro => {
@@ -16,7 +17,12 @@ class Story extends Component {
       this.setState({ storyIntro })
     })
   }
+  updateStartYear = (startYear) => {
+    this.setState({ startYear })
+  }
+
   render () {
+    const { startYear, storyIntro } = this.state
     return (
       <div id={styles.storyHolder}>
         <div className={styles.title}>
@@ -26,10 +32,16 @@ class Story extends Component {
           <img id={styles.headshot} src="/Profile.png" alt="My headshot" />
         </div>
         
-        <div className={styles.storyText}>{this.state.storyIntro}</div>
+        <div className={styles.storyText}>
+          {storyIntro}
+        </div>
+        <div className={styles.sliderTitle}>
+          {`Choose a starting year (currently: ${startYear})`}
+        </div>
+        <TimelineSlider startYear={startYear} updateStartYear={this.updateStartYear} />
         <div className={styles.timelineHolder}>
           <Timeline
-            startDate = {Date.parse('28 Nov 1980')}
+            startDate = {Date.parse(`01 Jan ${startYear}`)}
             endDate = {new Date()}
             xRatio = {800}
             yRatio = {3000}

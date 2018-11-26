@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './timeline.module.scss'
 import * as d3 from 'd3'
-window.d3 = d3
 
 class Timeline extends React.Component {
   constructor (props) {
@@ -10,17 +9,21 @@ class Timeline extends React.Component {
     }
   }
   render () {
-    const { startDate, endDate, xRatio, yRatio } = this.props
+    const { startDate, endDate, xRatio } = this.props
     const events = this.props.events.filter(e => e.date >= startDate)
     const xOffset = xRatio / 2 + 5
-    const yPadding = yRatio * 0.01
 
     const oneYear = 1000 * 60 * 60 * 24 * 365
     const startYear = startDate - startDate % oneYear
+    const startYearRounded = new Date(startYear + oneYear / 12).getFullYear()
+
+    const yRatio = this.props.yRatio * (2019 - startYearRounded) / 40
+    const yPadding = yRatio * 0.01
+
     const yScale = d3.scaleLinear().domain([startYear, endDate]).range([0 + yPadding, yRatio - yPadding])
 
     // start year isn't exactly the beginning of a year.  Adding a month to make sure I get the right year
-    const startYearRounded = new Date(startYear + oneYear / 12).getFullYear()
+
     const yearCount = Math.floor((endDate - startYear) / oneYear)
     const yearTicks = []
     for (let y = 0; y <= yearCount; y++) {
@@ -30,6 +33,7 @@ class Timeline extends React.Component {
         label: startYearRounded + y
       })
     }
+
     const svgStyle = {
       height: `${yRatio}pt`,
       width: `${xRatio}pt`

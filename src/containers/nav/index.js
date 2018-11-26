@@ -10,7 +10,7 @@ window.tl = new TimelineMax()
 
 class Nav extends Component {
   state = {
-    navActive: true,
+    navActive: false,
     navOffScreen: false,
     animationOff: true
   }
@@ -46,7 +46,7 @@ class Nav extends Component {
               Data Driven Full Stack Developer
             </div>
             <div id={styles.subHeader} className="col-12">
-              I find more efficient ways to make things
+              I strive to learn and implement more efficient ways to make things
             </div>
             <div className="row col-12 col-lg-10 col-xl-8 justify-content-center" id={styles.consoleHolder}>
               <div id={styles.console} className={`col-12 col-md-7`}>
