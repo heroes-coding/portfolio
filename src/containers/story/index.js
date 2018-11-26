@@ -8,7 +8,7 @@ import TimelineSlider from './timeslider'
 class Story extends Component {
   state = {
     storyIntro: '',
-    startYear: 1994
+    startYear: 1995
   }
   componentDidMount() {
     getStoryIntro().then(storyIntro => {
@@ -154,7 +154,7 @@ class Story extends Component {
               },
               {
                 date: Date.parse('01 Oct 2006'),
-                name: 'Moved to Shanghai to work as an automotive electronics sales rep',
+                name: 'Moved to Shanghai to work as an automotive electronics sales rep for a couple of years',
                 icon: icons.cogDudeIcon
               },
               {
@@ -179,8 +179,8 @@ class Story extends Component {
               },
               {
                 date: Date.parse('05 Jan 2014'),
-                name: 'Saw my daughter brought into this world',
-                icon: icons.childIcon
+                name: 'Saw my daughter brought into this world!',
+                icon: icons.oliviaIcon
               },             
               {
                 date: Date.parse('01 Aug 2014'),
@@ -204,7 +204,7 @@ class Story extends Component {
               },
               {
                 date: Date.parse('01 Mar 2017'),
-                name: 'Built the first version of Heroes.report with AWS and in browser parsing, looked for work',
+                name: 'Built the first version of Heroes.report with too many features to list, looked for work',
                 icon:  icons.firstSiteIcon
               },
               {

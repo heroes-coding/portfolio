@@ -20,7 +20,7 @@ export const gradIcon = () => <tspan className={styles.bigIcon}>  &#xf19d;</tspa
 export const blogIcon = () => <tspan className={styles.brandIcon}> &#xf19a; &#xf457;</tspan>
 export const tradeIcon = () => <tspan className={styles.bigIcon}>  &#xf5b0;</tspan>
 export const loveIcon = () => <tspan className={styles.bigIcon}>  &#xf584;</tspan>
-export const cogDudeIcon = () => <tspan className={styles.bigIcon}>  &#xf509;</tspan>
+export const cogDudeIcon = () => <tspan className={styles.bigIcon}> &#xf4ce; &#xf509;</tspan>
 export const codeLearnerIcon = () => <tspan className={styles.bigIcon}>  &#xf5fc; &#xf5da;</tspan>
 export const marriageMoveIcon = () => <tspan className={styles.bigIcon}>  &#xf4ce; &#xf4ba;</tspan>
 export const teacherIcon = () => <tspan className={styles.bigIcon}>  &#xf51c; &#xf51c;</tspan>
@@ -31,3 +31,4 @@ export const americasIcon = () => <tspan className={styles.bigIcon}>  &#xf57d;</
 export const firstSiteIcon = () => <tspan className={styles.brandIcon}> &#xf3e2; &#xf3b8; &#xf3d3; &#xf375;</tspan>
 export const secondSiteIcon = () => <tspan className={styles.brandIcon}> &#xf41b;<tspan className={styles.bigIcon}>  &#xf5fc; &#xf5fc;</tspan></tspan>
 export const cookIcon = () => <tspan className={styles.bigIcon}>  &#xf0b1; &#xf5fc;</tspan>
+export const oliviaIcon = () => <tspan className={styles.bigIcon}>  &#xf1ae; &#xf586; </tspan>
